@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<style>
+		
+			.coolbutton
+			{
+				heigth:30px;
+				background-image:url('background.png');
+			}
+			.coolerbutton
+			{
+				
+					background: #ebf1f6; /* Old browsers */
+background: -moz-linear-gradient(top,  #ebf1f6 0%, #abd3ee 50%, #89c3eb 51%, #d5ebfb 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebf1f6), color-stop(50%,#abd3ee), color-stop(51%,#89c3eb), color-stop(100%,#d5ebfb)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%); /* IE10+ */
+background: linear-gradient(top,  #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=0 ); /* IE6-9 */
+
+/*comment */
+			}
+			.roundedcorner
+			{
+				/*-moz-border-radius: 15px;*/
+				border-radius: 15px;
+				background-image:url('background.png');
+				padding-left:2px;
+			}
+			
+			.buttonwidthfloat
+			{
+				float:left;
+				width:auto;
+				border-left-style:solid;
+				margin-left:1px;
+			}
+		</style>
+	</head>
+	<body>
+		Hi this worked.
+		<div class="coolbutton buttonwidthfloat">
+			This is a button!
+			<!-- this is a comment -->
+		</div>
+		<div class="coolerbutton buttonwidthfloat">
+		This is another button.
+		</div>
+		<div class="roundedcorner buttonwidthfloat">
+			This is another button 2.
+		</div>
+		<form action="" method="get" name="thisForm">
+			Name: <input type="text" name="txtName" /> <br />
+			Favorite Color: <select name="cboColor">
+						<option value=""></option>
+						<option value="blue">Blue</option>
+						<option value="red">Red</option>
+				</select><br />
+				Sex: F<input type="radio" name="cboSex" value="F" />
+				M<input type="radio" name="cboSex" value="M" checked />
+				<br />
+			<input type="submit" name="cmdSubmit" value="Submit the Form" />
+		</form>
+	</body>
+</html>
+
+
+
+
+
+
+
+
