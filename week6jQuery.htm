@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+		<script type="text/javascript">
+			function ValidateMe()
+			{	
+				
+				if($("#txtName").val().length <= 0 )
+				{
+					alert("You must enter a name!");
+					$("#txtName").css('background-color','#ff0000');
+					return false;	
+				}
+				else
+				{
+					return true;
+				}
+				
+			}
+			function chkColor_Change()
+			{
+				
+				if($("#chkColor").attr('checked'))
+				{
+						$('#cmdSubmit').hide();
+				}
+				else
+				{
+					$('#cmdSubmit').show();
+				}
+				
+			}
+		</script>
+	</head>
+	<body>
+		<form name="thisForm" action="" method="get" onsubmit="return ValidateMe()">
+			Name: <input type="text" name="txtName" id="txtName" /><br />
+			Favorite Color: red:
+	<input type='radio' name='chkColor' id='chkColor' value='red' onchange='chkColor_Change()'>
+	blue:
+	<input type='radio' name='chkColor' id='chkColor' value='blue' onchange='chkColor_Change()'><br />
+		<input type="submit" name="cmdSubmit" id="cmdSubmit" /><br />
+
+		</form>
+	</body>
+</html>
+
+
+
+
+
+
+
+
